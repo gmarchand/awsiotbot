@@ -1,0 +1,20 @@
+@startuml
+
+title AWSIOTBOT - User Story : Audio
+
+actor "User" as user
+Participant "AWS IoT Button" as button
+Participant "Raspberry PI" as pi
+Participant "AWS IoT Platform" as ptf
+Participant "AWS Cloudfront" as bot
+
+
+
+user -> button : push button
+button -> ptf : Send message to queue
+ptf -> ptf : transfer message to another queue
+pi -> ptf : Receive message
+pi -> bot : Ask to Cancel
+pi -> user : speaks
+
+@enduml

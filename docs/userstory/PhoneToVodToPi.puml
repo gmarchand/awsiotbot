@@ -1,0 +1,14 @@
+@startuml
+
+title AWSIOTBOT - User Story : DEVOPS
+
+actor "User" as user
+Participant "Smartphone" as phone
+Participant "AWS S3" as s3
+Participant "AWS Lambda" as lambda
+Participant "AWS ETS" as transcoder
+Participant "AWS Cloudfront" as cdn
+Participant "AWS IoT" as iot
+Participant "Raspberry PI + TFT Screen" as pi
+
+@enduml
