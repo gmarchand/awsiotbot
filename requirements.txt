@@ -1,0 +1,5 @@
+boto3
+AWSIoTPythonSDK
+envparse
+click
+virtualenv
